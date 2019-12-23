@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*gnb*/
+.gnb li{
+    border-bottom:5px solid rgba(244,122,32,0);
+}
+.gnb li:hover{
+    border-bottom:5px solid rgba(244,122,32,1);
+}
+.header .gnb li .slnb{
+    width:130px;
+    margin-top:39px;
+    background:#fff;
+    overflow:hidden;
+    max-height:0;
+}
+.gnb li:hover .slnb{
+    transition:max-height 1.5s;
+    max-height:1000px;
+    box-shadow:1px 1px 3px 1px rgba(0,0,0,0.1);
+}
+.gnb .slnb li{
+    float:none;
+    text-align:left;
+    font-size:13px;
+    padding:0;
+    padding-left:10px;
+    margin:0;
+    border-bottom:none;
+}
+.slnb a{
+    display:block;
+    color:#777;
+    width:110px;
+    padding-left:5px;
+    border-bottom:1px solid #E4E4E4;
+    box-sizing:border-box;
+}
+.slnb li:last-child a{
+    border-bottom:none;
+}
+.slnb a:hover{
+    color:#F47A20;
+}
+
+/*헤더버튼*/
+.headerbtn li:first-child a:hover{
+    color:#F47A20;
+    background:url(../image/sub/btn_link1_on.png) no-repeat left center;
+}
+.headerbtn li:last-child a:hover{
+    color:#F47A20;
+    background:url(../image/sub/btn_link2_on.png) no-repeat left center;
+}
+
+/*selnb*/
+.sel .selnb{
+    width:202px;
+    margin-left:-1px;
+    background:#fff;
+    position:absolute;
+    z-index:1;
+    overflow:hidden;
+    max-height:0;
+}
+.sel:hover .selnb{
+    transition:max-height 0.5s;
+    max-height:310px;
+    box-shadow:1px 1px 3px 1px rgba(0,0,0,0.1);
+}
+.sel .selnb li{
+    float:none;
+    border:1px solid #E4E4E4;
+    border-top:none;
+}
+.snb .sel .selnb a{
+    background:none;
+}
+.sel .selnb li:hover a{
+    background:url(../image/sub/ar_snb.png) no-repeat 150px center;
+}
+
+/*이멜보내기*/
+.email a:hover{
+    transition:all 0.5s; 
+    border:1px solid #333;
+    background:url(../image/sub/bg_sendemail2.png) no-repeat 82px center;
+    color:#333;
+}
+
+/*푸터*/
+.footerL .icon a:hover{
+    background:#222;
+}
+
+.footerB .site{
+    position:relative;
+}
+.footerB .site .etc{
+    width:130px;
+    padding:10px;
+    position:absolute;
+    bottom:0;
+    background:#fff;
+    border:1px solid #444;
+    display:none;
+}
+.footerB .site:hover .etc{
+    display:block;
+}
+.site .etc li{
+    height:40px;
+    line-height:40px;
+}
+.site .etc a{
+    display:block;
+    color:#7c7c7c;
+}
+.site .etc a:hover{
+    color:#555;
+}
